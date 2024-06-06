@@ -12,7 +12,7 @@ having
              order by hacker_id) temp1)
     or c_count in 
         (select t.cnt
-         from (select count(*) as cnt 
+         from (select count(*) as cnt  
                from challenges
                group by hacker_id) t
          group by t.cnt
